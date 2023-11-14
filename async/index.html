@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai Aur Code</h1>
+
+    <button id="stop">stop</button>
+</body>
+
+<script>
+
+  const sayPurnesh = function() {
+    console.log("Purnesh")
+  }
+
+  const changeText = function() {
+    document.querySelector('h1').innerHTML = "greatest of the world";
+  }
+
+  //hiding the button after onclick
+
+  document.querySelector('#stop').addEventListener(
+    'click', function(e) {
+        console.log(e.target);
+        e.target.remove();
+    
+        
+    }
+  )
+
+
+  setTimeout(sayPurnesh, 2000);
+
+  setTimeout(changeText, 3000);
+
+</script>
+
+</html>
